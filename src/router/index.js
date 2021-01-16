@@ -11,12 +11,58 @@ const routes = [
     component: Home
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/create-a-contract',
+    name: 'CreateAContract',
+    component: () =>
+      import(
+        /* webpackChunkName: "CreateAContract" */ '../views/CreateAContract.vue'
+      )
+  },
+  {
+    path: '/compliance-documents',
+    name: 'ComplianceDocuments',
+    component: () =>
+      import(
+        /* webpackChunkName: "ComplianceDocuments" */ '../views/ComplianceDocuments.vue'
+      )
+  },
+  {
+    path: '/invoices',
+    name: 'Invoices',
+    component: () =>
+      import(/* webpackChunkName: "Invoices" */ '../views/Invoices.vue')
+  },
+  {
+    path: '/taxes',
+    name: 'Taxes',
+    component: () =>
+      import(/* webpackChunkName: "Taxes" */ '../views/Taxes.vue')
+  },
+  {
+    path: '/transaction-history',
+    name: 'TransactionHistory',
+    component: () =>
+      import(
+        /* webpackChunkName: "TransactionHistory" */ '../views/TransactionHistory.vue'
+      )
+  },
+  {
+    path: '/insurance',
+    name: 'Insurance',
+    component: () =>
+      import(/* webpackChunkName: "Insurance" */ '../views/Insurance.vue')
+  },
+  {
+    path: '/deel-advance',
+    name: 'DeelAdvance',
+    component: () =>
+      import(/* webpackChunkName: "DeelAdvance" */ '../views/DeelAdvance.vue')
+  },
+  {
+    path: '/perks',
+    name: 'Perks',
+    component: () =>
+      import(/* webpackChunkName: "Perks" */ '../views/Perks.vue')
   }
 ]
 

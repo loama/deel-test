@@ -2,7 +2,6 @@
   <div id="app">
     <DesktopNav />
     <div id="content" class="min-h-screen w-screen">
-      hola
       <router-view />
     </div>
   </div>
